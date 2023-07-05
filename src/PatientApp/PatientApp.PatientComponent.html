@@ -1,0 +1,21 @@
+<b>Hello first Angula.r</b>this asdsad
+name :- <input type="text" [(ngModel)]="patObj.name" /><br>
+code :- <input type="text" [(ngModel)]="patObj.code" /><br>
+amount :- <input type="text" [(ngModel)]="patObj.billAmount" /><br>
+<input type="button" value="Click" (click)="Add()" />
+<br>
+{{1+1}}
+<b>{{patObj.name}}</b> <br>
+<table>
+    <tr>
+        <td>name</td>
+        <td>code</td>
+        <td>billAmount</td>
+    </tr>
+    <tr  *ngFor="let temp of patObjs" >
+        <td>{{temp.name}}</td>
+        <td>{{temp.code}}</td>
+        <td>{{temp.billAmount}}</td>
+    </tr>
+</table>
+
